@@ -6,6 +6,17 @@ body {
     text-align: center;
 }  
 
+
+#why-iceland {
+    padding: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#favorite-sites {
+    
+}
+
 .column {
     float: left;
     width: 50%;
@@ -60,6 +71,27 @@ body {
     margin-bottom: 15px;
   }
   
+
+/* unvisited link */
+a:link {
+    color: red;
+  }
+  
+  /* visited link */
+  a:visited {
+    color: green;
+  }
+  
+  /* mouse over link */
+  a:hover {
+    color: hotpink;
+  }
+  
+  /* selected link */
+  a:active {
+    color: blue;
+  }
+
   /* span {
     display: inline-block;
     font-size: 1em;
