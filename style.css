@@ -2,27 +2,37 @@ body {
     background: whitesmoke;
   }
 
-  /* @font-face {
-    font-family: 'Avenir Next Condensed', 'Arial Narrow', sans-serif;
-    src: url('https://s3.amazonaws.com/learn-verified/Avenir+Next+Condensed.ttc');
-  } */
+#title-box {
+    text-align: center;
+}  
 
+.column {
+    float: left;
+    width: 50%;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
 
   h1 {
     font-family: 'Avenir Next Condensed', 'Arial Narrow', sans-serif;
     font-size: 10.25em;
     line-height: 1em;
     letter-spacing: .03em;
-    margin-bottom: 2px;
+    margin-bottom: 1px;
   }
 
-  /* h2 {
-    font-family: 'Perpetua';
+  h2 {
+    font-family: 'Caveat', 'Garamond', serif;
     font-size: 3.1em;
     line-height: 1em;
     letter-spacing: .03em;
     margin-bottom: 2px;
-  } */
+  }
   
   h3 {
     font-family: 'Avenir Next Condensed', 'Arial Narrow', sans-serif;
@@ -44,7 +54,7 @@ body {
   
   p {
     font-family: 'Lora';
-    font-size: .9em;
+    font-size: 1.2em;
     line-height: 1.8em;
     letter-spacing: .103em;
     margin-bottom: 15px;
