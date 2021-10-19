@@ -2,9 +2,17 @@ body {
     background: whitesmoke;
   }
 
-#title-box {
-    text-align: center;
-}  
+/* img {
+    display: inline-block;
+    margin: 0 40px;
+  } */
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 65%;
+}
 
 #why-iceland {
     padding: 10px;
@@ -12,17 +20,18 @@ body {
     margin-right: 10px;
 }
 
-#favorite-sites {
 
+#favorite-sites {
+    border-top: 20px;
 }
 
-.column {
+.top-column {
     float: left;
     width: 50%;
   }
-  
+
   /* Clear floats after the columns */
-  .row:after {
+  .top-row:after:after {
     content: "";
     display: table;
     clear: both;
@@ -34,14 +43,6 @@ body {
     line-height: 1em;
     letter-spacing: .03em;
     margin-bottom: 1px;
-  }
-
-  h2 {
-    font-family: 'Garamond', serif;
-    font-size: 3.1em;
-    line-height: 1em;
-    letter-spacing: .03em;
-    margin-bottom: 2px;
   }
   
   h3 {
@@ -72,47 +73,108 @@ body {
   }
 
   p {
-    font-family: 'Lora', serif;
+    font-family: 'Lato', serif;
     font-size: 1.2em;
     line-height: 1.8em;
     letter-spacing: .08em;
     margin-bottom: 15px;
   }
-  
+
+
+
 
 /* unvisited link */
 a:link {
-    color: red;
+    color: #4FA88F;
   }
   
   /* visited link */
   a:visited {
-    color: green;
+    color: #2D47A8;
   }
   
   /* mouse over link */
   a:hover {
-    color: hotpink;
+    color: #4E71F5;
   }
   
   /* selected link */
   a:active {
-    color: blue;
+    color: #67F5CD;
   }
 
-  /* span {
-    display: inline-block;
-    font-size: 1em;
-    line-height: 1em;
-    letter-spacing: .35em;
-    vertical-align: top;
-    padding-top: 10px;
-  } */
-  
-  /* img {
-    display: inline-block;
-    margin: 0 40px;
-  } */
-  
 
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+  }
   
+  /* Create four equal columns that sits next to each other */
+  .column {
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+  }
+  
+  .column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+  }
+  
+  /* Responsive layout - makes a two column-layout instead of four columns */
+  @media screen and (max-width: 800px) {
+    .column {
+      flex: 50%;
+      max-width: 50%;
+    }
+  }
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column {
+      flex: 100%;
+      max-width: 100%;
+    }
+  }
+
+
+
+
+  * {box-sizing: border-box}
+
+  /* Container needed to position the overlay. Adjust the width as needed */
+  .container {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+  }
+  
+  /* Make the image to responsive */
+  .image {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  /* The overlay effect - lays on top of the container and over the image */
+.overlay {
+    position: absolute;
+    bottom: 0;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.5); /* Black see-through */
+    color: #f1f1f1;
+    width: 100%;
+    transition: .5s ease;
+    opacity:0;
+    color: white;
+    font-size: 20px;
+    padding: 20px;
+    text-align: center;
+  }
+
+  /* When you mouse over the container, fade in the overlay title */
+.container:hover .overlay {
+    opacity: 1;
+  }
