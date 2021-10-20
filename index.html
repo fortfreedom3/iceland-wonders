@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link href='https://fonts.googleapis.com/css?family=Caveat' rel='stylesheet'>
+
     <link rel="stylesheet" href="style.css" />
     <title>My Website</title>
 </head>
@@ -11,7 +13,8 @@
     </div>
 
     <div id="why-iceland" class="top-row">
-        <div class="top-column">   <h3>Why go to Iceland? 🇮🇸</h3>
+        <div class="top-column">
+            <h3>Why go to Iceland? 🇮🇸</h3>
             <p>Honestly, I truly had no idea how wonderful and magical this country 
                 was until I arrived. My first exposure to the beauty of Iceland came 
                 from the 2013 movie <a href="https://www.imdb.com/title/tt0359950/?ref_=fn_al_tt_1" target="_blank">
@@ -45,19 +48,21 @@
               <img src="./images/Þingvellir-sqaure-2.jpg">
             </div>
             <div class="column">
-              <img src="./images/myvatn-lake-1.jpg">
-              <img src="./images/blue-lagoon-2.jpg">
-              <img src="./images/hvítserkur-rock.jpg">
+                <img src="./images/hvítserkur-rock.jpg">
+                <img src="./images/hjalteyri-sqaure.jpg">
+              <img src="./images/blue-lagoon-peace-sqaure.jpg">
+              
             </div>
             <div class="column">
-              <img src="./images/hjalteyri.jpg">
+                <img src="./images/puffin-square.jpg">
               <img src="./images/skógafoss-waterfall.jpg">
-              <img src="./images/sunset.jpg">
+              <img src="./images/sunset-square.jpg">
             </div>
             <div class="column">
-                <img src="./images/puffin-1.jpg">
-                <img src="./images/jökulsárlón-Glacier-lagoon-square.jpg">
                 <img src="./images/Þingvellir-water-land.jpg">
+                <img src="./images/myatvan-lake-sqaure.jpg">
+                <img src="./images/jökulsárlón-Glacier-lagoon-square.jpg">
+                
                
               </div>
           </div>
@@ -72,24 +77,35 @@
         <h5>Rent a car</h5>
         <p>The majority of the population is centered around the capital, Reykjavik. It’s a cute little European capital city, but in my opinion all of the amazing sites worth checking out are to be found in the countryside. 
         </p>
-        <h5>Packing</h5>
-        <ul>
-            <li>In the summer Iceland is light <em>all</em> day. Bring a sleep mask! 
-        </li>
-        <li>Bring layers. You’ll need to pack for rain and cold temps but we also had warm sunny days in shorts and t-shirts.</li>
-        <li>Bring your own snacks and plan to make your own meals when you can. Food is very expensive there! New York City prices (or worse) for mediocre but not that spectacular food. A large Domino’s pizza there was nearly $35.</li>
-        </ul>
-        
+        <h5>Packing Tips</h5>
+        <p>In the summer Iceland is light <em>all</em> day. Bring a sleep mask!
+            Bring layers. You’ll need to pack for rain and cold temps but we also had warm sunny days in shorts and t-shirts.
+        Bring your own snacks and plan to make your own meals when you can. Food is very expensive there. You will pay
+         New York City prices (or worse) for mediocre but not that spectacular food. 
+        </p>
     </div>
 
-    <script src="script.js"></script>
+
+    <div class="footer">
+        <h4>
+        <script type="text/javascript">
+        
+            writeRandomQuote = function () {
+              var quotes = new Array();
+              quotes[0] = "'Do or do not. There is no try.' ~Yoda";
+              quotes[1] = "'There is no fate but what we make.' ~Kyle Reese from Terminator";
+              quotes[3] = "'When you become comfortable with uncertainty, infinite possibilities open up in your life.' ~Eckhart Tolle";
+              var rand = Math.floor(Math.random()*quotes.length);
+              document.write(quotes[rand]);
+            }
+            writeRandomQuote();
+          </script>
+        </h4>
+        <h5 class ="center">Site created by Morgan Byrne</h5>
+        <br>
+    </div>
 
     
-
-
-    <h4 class="center"><em>Created by Morgan Byrne</em></h4>
-
-
-
+    
 </body>
 </html>
