@@ -1,5 +1,7 @@
 body {
     background: whitesmoke;
+    margin-left: 20px;
+    margin-right: 20px;
   }
 
 .center {
@@ -9,45 +11,22 @@ body {
     text-align: center;
 }
 
-#why-iceland {
-    padding: 10px;
-    margin-left: 10px;
-    margin-right: 10px;
-    
-}
-
-.top-column {
-    float: left;
-    width: 50%;
-  }
-
-  /* Clear floats after the columns */
-  .top-row:after:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-
-  #favorite-sites {
-    border-top: 20px;
-}
-
-  h1 {
+h1 {
     font-family: 'Avenir Next Condensed', 'Arial Narrow', sans-serif;
     font-size: 10.25em;
     line-height: 1em;
     letter-spacing: .03em;
     margin-bottom: 1px;
-  }
+}
   
-  h3 {
+h3 {
     font-family: 'Avenir Next Condensed', 'Arial Narrow', sans-serif;
     font-weight: bold;
     font-size: 3.1em;
     letter-spacing: .03em;
     margin-bottom: 18px;
     line-height: 1em;
-  }
+}
 
   /* the subheading and footer */
   h4 {
@@ -73,10 +52,7 @@ body {
     font-size: 1.2em;
     line-height: 1.8em;
     letter-spacing: .08em;
-    margin-bottom: 15px;
   }
-
-
 
 
 /* unvisited link */
