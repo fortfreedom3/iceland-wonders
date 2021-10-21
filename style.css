@@ -49,11 +49,14 @@ h3 {
 
   p {
     font-family: 'Garamond';
-    font-size: 1.2em;
-    line-height: 1.8em;
-    letter-spacing: .08em;
+    font-size: 20px;
+    line-height: 1.7em;
+    letter-spacing: .03em;
   }
 
+a {
+    font-weight: bold;
+}
 
 /* unvisited link */
 a:link {
@@ -141,6 +144,7 @@ a:link {
     transition: .5s ease;
     opacity:0;
     color: white;
+    font-family: 'Avenir Next Condensed', 'Arial Narrow', sans-serif;
     font-size: 20px;
     padding: 20px;
     text-align: center;
@@ -153,7 +157,7 @@ a:link {
 
 
   .footer {
-    padding: 20px; /* Some padding */
-    text-align: center; /* Center text*/
-    background: #ddd; /* Grey background */
+    padding: 20px; 
+    text-align: center; 
+    background: #ddd; 
   }
